@@ -78,3 +78,6 @@ a:focus, a:hover {
     color: 
     #cc2f6b;
 }
+.widget-title{
+	display: none;
+}
