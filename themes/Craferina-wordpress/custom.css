@@ -114,4 +114,5 @@ a:focus, a:hover {
 .wp-block-quote{
 	text-align: center;
 	font-size: 1.3em;
+	font-style: italic;
 }
