@@ -21,16 +21,27 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="site grid-x">
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header cell large-2">
 		<?php the_custom_logo(); ?>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="site-navigation" class="main-navigation cell large-7" role="navigation">
 			
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav>
 
+		<div class="cell large-3 medium-3">
+			<?php
+				if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+					return;
+				}
+			?>
+			<div id="secondary" class="widget-area">
+				<?php dynamic_sidebar( 'sidebar-1' ); ?>
+			</div>
+		</div>
+
 	</header>
-	
-<div id="content" class="site-content">
+
+	<div id="content" class="site-content">
