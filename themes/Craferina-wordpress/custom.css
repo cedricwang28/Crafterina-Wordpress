@@ -110,3 +110,7 @@ a:focus, a:hover {
 	text-align: center;
 	margin-bottom: 5%;
 }
+
+.wp-block-quote{
+	text-align: center;
+}
