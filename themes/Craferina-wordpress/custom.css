@@ -97,3 +97,10 @@ a:focus, a:hover {
 .page-title{
 	display: none;
 }
+
+.wp-image-32{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
