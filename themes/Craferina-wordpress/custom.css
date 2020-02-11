@@ -93,3 +93,7 @@ a:focus, a:hover {
 .search-form{
 	display: none;
 }
+
+.page-title{
+	display: none;
+}
