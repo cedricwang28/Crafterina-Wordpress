@@ -81,3 +81,7 @@ a:focus, a:hover {
 .widget-title{
 	display: none;
 }
+
+.widget ul{
+	display: none;
+}
