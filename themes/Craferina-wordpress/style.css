@@ -68,3 +68,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .alignwide {
 	max-width: 85vw;
 }
+
+.screen-reader-text{
+	display: none;
+}
+.search-field{
+	border-radius: 5px;
+}
