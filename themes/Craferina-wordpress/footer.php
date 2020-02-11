@@ -75,11 +75,7 @@
 				
 		</div><!-- .site-info -->
 		
-
-
-
-
-		<div class="site-info-01">
+		<div class="site-info-04">
 			<a href="<?php echo esc_url( __( '', 'ecommerce-theme' ) ); ?>">
 			<h5> Contact Info </h5>
 				<?php
@@ -95,9 +91,32 @@
 			</a>
 			<span class="sep">  </span>
 				
-		</div><!-- .site-info -->
+		</div>
+
+		<!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+
+</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer">
+	<div class="site-info">
+            <a href="<?php echo esc_url( __( '', '' ) ); ?>">
+                <?php
+                /* translators: %s: CMS name, i.e. WordPress. */
+                printf( esc_html__( ' Copyright &copy %s 2020', '' ), '' );
+                ?>
+            </a>
+            <span class="sep"> | </span>
+                <?php
+                /* translators: 1: Theme name, 2: Theme author. */
+                printf( esc_html__( ' All Rights Reserved' ), 'Craferina', '<a href="/">Craferina</a>' );
+                ?>
+        </div>
+
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
 
 <?php wp_footer(); ?>
 
