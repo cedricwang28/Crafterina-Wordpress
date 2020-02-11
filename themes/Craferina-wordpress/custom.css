@@ -20,20 +20,25 @@
 	padding:40px 0px;
 }
 #colophon div{
+	color: black;
 	flex: 1;
 	font-size: 13px;
 }
 .site-info-01 a{
+	color: black;
 	font-size: 1.5em;
 }
 .site-info-02 a{
+	color: black;
 	font-size: 1.5em;
 }
 .site-info-03 a{
+	color: black;
 	font-size: 1.5em;
 }
 .site-info-04 a{
-	font-size: 1.5em;
+	font-size: 1.5;
+	color: black;
 }
 
 
@@ -65,3 +70,4 @@ header img{
 header{
 	height: auto;
 }
+
