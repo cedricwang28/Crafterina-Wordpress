@@ -21,11 +21,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site grid-x">
+<div id="page" class="site">
 
-	<header id="masthead" class="site-header cell large-2">
-		<?php the_custom_logo(); ?>
-
+	<header id="masthead" class="site-header  grid-x">
+		<div class="cell large-2">
+			<?php the_custom_logo(); ?>
+		</div>
+		
 		<nav id="site-navigation" class="main-navigation cell large-7" role="navigation">
 			
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
