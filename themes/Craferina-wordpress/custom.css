@@ -71,3 +71,10 @@ header{
 	height: auto;
 }
 
+.menu .button, .menu a {
+	padding: .5rem 8rem ;
+}
+a:focus, a:hover {
+    color: 
+    #cc2f6b;
+}
