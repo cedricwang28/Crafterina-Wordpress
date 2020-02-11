@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info-01">
 			<a href="<?php echo esc_url( __( '', 'ecommerce-theme' ) ); ?>">
-			<h5> Crafterina </h5>
+			<h3> Crafterina </h3>
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'About %s'), '' );
@@ -35,7 +35,7 @@
 
 		<div class="site-info-02">
 			<a href="<?php echo esc_url( __( '', 'ecommerce-theme' ) ); ?>">
-			<h5> Deals </h5>
+			<h3> Deals </h3>
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Coupons %s'), '' );
@@ -53,7 +53,7 @@
 		
 		<div class="site-info-03">
 			<a href="<?php echo esc_url( __( '', 'ecommerce-theme' ) ); ?>">
-			<h5> Policies </h5>
+			<h3> Policies </h3>
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Return %s'), '' );
@@ -77,7 +77,7 @@
 		
 		<div class="site-info-04">
 			<a href="<?php echo esc_url( __( '', 'ecommerce-theme' ) ); ?>">
-			<h5> Contact Info </h5>
+			<h3> Contact Info </h3>
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( '2000 Simcoe street, Oshawa, Ontario %s'), '' );
