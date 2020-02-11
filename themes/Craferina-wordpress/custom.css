@@ -9,7 +9,6 @@
 }
 #masthead nav{
 	list-style: none;
-
 }
 
 #colophon{
@@ -47,7 +46,8 @@ li{
 }
 nav{
 	color: #000;
-	float: left;
+	float: right;
+	background-color: #F7DDD9;
 }
 nav ul{
 	height: auto;
