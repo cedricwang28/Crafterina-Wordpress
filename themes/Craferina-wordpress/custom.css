@@ -89,3 +89,7 @@ a:focus, a:hover {
 .entry-footer{
 	display: none;
 }
+
+.search-form{
+	display: none;
+}
