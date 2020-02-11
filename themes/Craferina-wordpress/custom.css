@@ -45,8 +45,10 @@ li{
     font-size: 25px;
 }
 nav{
+	width: 100vw;
 	color: #000;
 	float: right;
+	text-justify: newspaper;
 	background-color: #F7DDD9;
 }
 nav ul{
