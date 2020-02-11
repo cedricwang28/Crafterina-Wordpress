@@ -85,3 +85,7 @@ a:focus, a:hover {
 .widget ul{
 	display: none;
 }
+
+.entry-footer{
+	display: none;
+}
