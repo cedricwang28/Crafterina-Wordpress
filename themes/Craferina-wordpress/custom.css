@@ -100,7 +100,11 @@ a:focus, a:hover {
 
 .wp-image-32{
 	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.entry-title{
+	text-align: center;
 }
