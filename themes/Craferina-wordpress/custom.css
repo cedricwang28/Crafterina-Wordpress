@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#masthead{
+	background-color: white;
+	height: 20vh;
+}
+#masthead nav{
+	list-style: none;
+
+}
+
+#colophon{
+	background-color: #F7DDD9;
+	text-align: center;
+	color:white;
+	font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+	display: flex;
+	padding:40px 0px;
+}
+#colophon div{
+	flex: 1;
+	font-size: 13px;
+}
+
+
+li{
+	list-style: none;
+	float: left;
+    color: #000;
+    margin-top: 40px;
+    font-size: 25px;
+}
+nav{
+	color: #000;
+	float: left;
+}
+nav ul{
+	height: auto;
+}
+nav ul li a{
+	color: #000;
+	line-height: 150px;
+}
+header img{
+	float: left;
+	width: 150px;
+}
+header{
+	height: auto;
+}

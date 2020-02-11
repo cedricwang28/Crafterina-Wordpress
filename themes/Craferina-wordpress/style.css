@@ -1,0 +1,70 @@
+/*!
+Theme Name: Crafterina-Wordpress
+Theme URI: http://underscores.me/
+Author: TIANWEI WANG
+Author URI: http://cedricwang.com
+Description: crafterina site
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: craferina
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Craferina is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+
+*/
+
+
+
+
+
+
+.has-pink-color {
+	color: #F7DDD9;
+}
+
+.has-darkpink-color {
+	background-color: #E9B8AC;
+}
+
+.has-pink3-color {
+	color: #C599C5;
+}
+
+.has-pink3-color {
+	background-color: #965B96;
+}
+
+
+.has-white-color {
+	color: #fff;
+}
+
+.has-white-background-color {
+	background-color: #fff;
+}
+
+.has-black-color {
+	color: #000;
+}
+
+.has-black-background-color {
+	background-color: #000;
+}
+
+.alignwide, .alignfull {
+	position: relative;
+	left: 50%;
+	width: 100vw;
+	max-width: 100vw;
+	transform: translate3d( -50%, 0, 0 )
+}
+
+.alignwide {
+	max-width: 85vw;
+}
