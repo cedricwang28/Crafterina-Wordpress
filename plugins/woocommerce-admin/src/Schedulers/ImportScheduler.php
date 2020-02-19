@@ -15,7 +15,12 @@ use \Automattic\WooCommerce\Admin\Schedulers\SchedulerTraits;
 /**
  * ImportScheduler class.
  */
-abstract class ImportScheduler {
+abstract class ImportScheduler implements ImportInterface {
+	/**
+	 * Import stats option name.
+	 */
+	const IMPORT_STATS_OPTION = 'woocommerce_admin_import_stats';
+
 	/**
 	 * Scheduler traits.
 	 */
@@ -38,8 +43,18 @@ abstract class ImportScheduler {
 				'group'    => self::$group,
 			)
 		);
+		if ( empty( $pending_jobs ) ) {
+			$in_progress = self::queue()->search(
+				array(
+					'status'   => 'in-progress',
+					'per_page' => 1,
+					'search'   => 'import',
+					'group'    => self::$group,
+				)
+			);
+		}
 
-		return ! empty( $pending_jobs );
+		return ! empty( $pending_jobs ) || ! empty( $in_progress );
 	}
 
 	/**
@@ -74,23 +89,6 @@ abstract class ImportScheduler {
 			'import'            => 'wc-admin_import_' . static::$name,
 		);
 	}
-
-	/**
-	 * Get items based on query and return IDs along with total available.
-	 *
-	 * @param int      $limit Number of records to retrieve.
-	 * @param int      $page  Page number.
-	 * @param int|bool $days Number of days prior to current date to limit search results.
-	 * @param bool     $skip_existing Skip already imported items.
-	 */
-	abstract public static function get_items( $limit, $page, $days, $skip_existing );
-
-	/**
-	 * Get total number of items already imported.
-	 *
-	 * @return null
-	 */
-	abstract public static function get_total_imported();
 
 	/**
 	 * Queue the imports into multiple batches.
@@ -138,10 +136,10 @@ abstract class ImportScheduler {
 			static::import( $id );
 		}
 
-		$import_stats                              = get_option( 'wc_admin_import_stats', array() );
+		$import_stats                              = get_option( self::IMPORT_STATS_OPTION, array() );
 		$imported_count                            = absint( $import_stats[ static::$name ]['imported'] ) + count( $items->ids );
 		$import_stats[ static::$name ]['imported'] = $imported_count;
-		update_option( 'wc_admin_import_stats', $import_stats );
+		update_option( self::IMPORT_STATS_OPTION, $import_stats );
 
 		$properties['imported_count'] = $imported_count;
 

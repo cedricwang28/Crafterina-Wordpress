@@ -19,7 +19,7 @@ class Package {
 	 *
 	 * @var string
 	 */
-	const VERSION = '0.24.0';
+	const VERSION = '0.25.1';
 
 	/**
 	 * Init the package.
@@ -31,6 +31,17 @@ class Package {
 		if ( ! $wordpress_minimum_met ) {
 			return;
 		}
+
+		// Indicate to the feature plugin that the core package exists.
+		if ( ! defined( 'WC_ADMIN_PACKAGE_EXISTS' ) ) {
+			define( 'WC_ADMIN_PACKAGE_EXISTS', true );
+		}
+
+		// Avoid double initialization when the feature plugin is in use.
+		if ( defined( 'WC_ADMIN_VERSION_NUMBER' ) ) {
+			return;
+		}
+
 		FeaturePlugin::instance()->init();
 	}
 
