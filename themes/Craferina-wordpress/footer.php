@@ -14,105 +14,24 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info-01">
-			<a href="<?php echo esc_url( __( '', 'ecommerce-theme' ) ); ?>">
-			<h3> Crafterina </h3>
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'About %s'), '' );
-				?><br/>
-				<?php
-				printf( esc_html__( 'Contact Us %s'), '' );
-				?><br/>
-				<?php
-				printf( esc_html__( 'Carrers %s'), '' );
-				?>
-			</a>
-			<span class="sep">  </span>
-				
-		</div><!-- .site-info -->
-
-
-		<div class="site-info-02">
-			<a href="<?php echo esc_url( __( '', 'ecommerce-theme' ) ); ?>">
-			<h3> Deals </h3>
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Coupons %s'), '' );
-				?><br/>
-				<?php
-				printf( esc_html__( 'Products to discover %s'), '' );
-				?><br/>
-				<?php
-				printf( esc_html__( 'Occasional deals %s'), '' );
-				?>
-			</a>
-			<span class="sep">  </span>
-				
-		</div><!-- .site-info -->
-		
-		<div class="site-info-03">
-			<a href="<?php echo esc_url( __( '', 'ecommerce-theme' ) ); ?>">
-			<h3> Policies </h3>
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Return %s'), '' );
-				?><br/>
-				<?php
-				printf( esc_html__( 'Exchange %s'), '' );
-				?><br/>
-				<?php
-				printf( esc_html__( 'Terms of use %s'), '' );
-				?><br/>
-				<?php
-				printf( esc_html__( 'Security %s'), '' );
-				?><br/>
-				<?php
-				printf( esc_html__( 'Privacy %s'), '' );
-				?>
-			</a>
-			<span class="sep">  </span>
-				
-		</div><!-- .site-info -->
-		
-		<div class="site-info-04">
-			<a href="<?php echo esc_url( __( '', 'ecommerce-theme' ) ); ?>">
-			<h3> Contact Info </h3>
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( '2000 Simcoe street, Oshawa, Ontario %s'), '' );
-				?><br/>
-				<?php
-				printf( esc_html__( '9876543210 %s'), '' );
-				?><br/>
-				<?php
-				printf( esc_html__( 'jewellery@craferina.com %s'), '' );
-				?>
-			</a>
-			<span class="sep">  </span>
-				
-		</div>
-
-		<!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-	<div class="site-info">
-            <a href="<?php echo esc_url( __( '', '' ) ); ?>">
-                <?php
-                /* translators: %s: CMS name, i.e. WordPress. */
-                printf( esc_html__( ' Copyright &copy %s 2020', '' ), '' );
-                ?>
-            </a>
-            <span class="sep"> | </span>
-                <?php
-                /* translators: 1: Theme name, 2: Theme author. */
-                printf( esc_html__( ' All Rights Reserved' ), 'Craferina', '<a href="/">Craferina</a>' );
-                ?>
-        </div>
+	<nav id="social-navigation" class="main-navigation cell large-12 medium-12 grid-x align-middle">
+					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce-theme' ); ?></button> -->
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'social',
+						'menu_id'        => 'social-menu',
+					) );
+					?>
+			</nav><!-- #social-links-navigation -->
+			<nav id="footer-navigation" class="main-navigation cell large-12 medium-12 grid-x align-middle">
+					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ecommerce-theme' ); ?></button> -->
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer',
+						'menu_id'        => 'footer-menu',
+					) );
+					?>
+			</nav>
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->

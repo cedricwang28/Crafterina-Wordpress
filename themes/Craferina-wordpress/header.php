@@ -28,8 +28,20 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+
 		</nav>
+
+		<div class="cell large-3 medium-3">
+			<?php
+				if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+					return;
+				}
+			?>
+			<div id="secondary" class="widget-area">
+				<?php dynamic_sidebar( 'sidebar-1' ); ?>
+			</div>
+		</div>
 
 	</header>
 	
