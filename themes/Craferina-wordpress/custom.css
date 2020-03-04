@@ -73,13 +73,14 @@ input.search-field{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 4vw;
+	margin-top: 40px;
 
 }
 header{
 	position: relative;
 }
 .woocommerce-result-count{
-	
+	margin-top: 40px;
 }
 
 .attachment-woocommerce_thumbnail{
@@ -105,7 +106,9 @@ main{
 }
 
 
-
+.onsale{
+	display: none;
+}
 
 
 
