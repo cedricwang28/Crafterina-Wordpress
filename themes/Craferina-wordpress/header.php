@@ -30,7 +30,7 @@
 		
 		<nav id="site-navigation" class="main-navigation cell large-6" role="navigation">
 			
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav>
 
 		<div class="cell large-4 medium-3">
