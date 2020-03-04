@@ -63,3 +63,16 @@ header form {
 input.search-field{
 	height:100%;
 }
+
+.woocommerce-products-header__title{
+	display: none;
+}
+
+.columns-3 .products{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.attachment-woocommerce_thumbnail{
+	width: 500px;
+}
