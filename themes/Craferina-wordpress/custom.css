@@ -76,3 +76,12 @@ input.search-field{
 .attachment-woocommerce_thumbnail{
 	width: 500px;
 }
+
+body{
+	padding-left: 2vw;
+}
+
+.orderby{
+	width: 30vw;
+	
+}
