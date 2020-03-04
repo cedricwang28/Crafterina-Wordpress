@@ -28,13 +28,12 @@
 			<?php the_custom_logo(); ?>
 		</div>
 		
-		<nav id="site-navigation" class="main-navigation cell large-7" role="navigation">
+		<nav id="site-navigation" class="main-navigation cell large-6" role="navigation">
 			
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav>
 
-		<div class="cell large-3 medium-3">
+		<div class="cell large-4 medium-3">
 			<?php
 				if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 					return;
