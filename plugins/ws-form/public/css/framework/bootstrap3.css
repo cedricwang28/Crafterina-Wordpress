@@ -1,0 +1,16 @@
+.col-xs-12, .col-sm-12, .col-md-12 , .col-lg-12 {
+	float: left;
+}
+
+.wsf-validated .form-control:invalid, .wsf-validated .form-control.wsf-invalid {
+	border-color: #a94442;
+}
+
+.wsf-invalid-feedback {
+	color: #a94442;
+	display: none;
+}
+
+.wsf-validated .form-control:invalid ~ .wsf-invalid-feedback, .wsf-validated input[type=checkbox]:invalid ~ .wsf-invalid-feedback, .wsf-validated input[type=radio]:invalid ~ .wsf-invalid-feedback, .wsf-validated .form-control.wsf-invalid ~ .wsf-invalid-feedback {
+	display: block;
+}

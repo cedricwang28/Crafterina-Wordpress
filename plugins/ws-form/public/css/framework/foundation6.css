@@ -1,0 +1,21 @@
+.minicolors-input {
+	padding-left: 44px;
+}
+
+.minicolors-theme-foundation .minicolors-swatch {
+	border: 1px solid hsla(0,0%,4%,.25);
+	cursor: pointer;
+	height: 29px;
+	left: 5px;
+	top: 5px;
+	width: 29px;
+}
+
+.wsf-tab-disabled {
+	pointer-events: none;
+}
+
+.wsf-tab-disabled.tabs-title>a {
+	color: #cacaca;
+    cursor: not-allowed;
+}

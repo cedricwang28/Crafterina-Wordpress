@@ -1,0 +1,11 @@
+.custom-file-label {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.minicolors-theme-bootstrap .minicolors-swatch {
+	cursor: pointer;
+	height: 32px;
+	width: 32px;
+}
