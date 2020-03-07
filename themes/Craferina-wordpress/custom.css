@@ -143,3 +143,16 @@ main{
 h2{
 	font-family: 'Francois One', sans-serif;
 }
+
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_slide figure img{
+	display: grid !important;
+	grid-template-columns: 1fr !important;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    width:100vw ;
+}
+.wp-block-jetpack-slideshow_image{
+	width: 100vw;
+	height: 100vh;
+}
