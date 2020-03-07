@@ -144,7 +144,7 @@ h2{
 	font-family: 'Francois One', sans-serif;
 }
 
-.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_slide figure img{
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_slide figure{
 	display: grid !important;
 	grid-template-columns: 1fr !important;
     height: 100%;
