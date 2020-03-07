@@ -125,7 +125,7 @@ a:focus, a:hover {
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 	width: 100%;
-	grid-gap: 6vw 3vh;
+	grid-gap: 6vw 4vh;
 }
 
 .wp-block-gallery.is-cropped .blocks-gallery-item img {
