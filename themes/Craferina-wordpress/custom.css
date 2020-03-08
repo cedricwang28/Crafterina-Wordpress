@@ -19,11 +19,21 @@
 	text-align: center;
 	color:white;
 	font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
-	display: flex;
+	
 	padding:40px 0px;
 }
+#colophon a{
+	color: grey;
+}
+#social-navigation{
+	height: 100px;
+	text-align: center;
+}
+
+
+
 #colophon div{
-	flex: 1;
+
 	font-size: 13px;
 }
 

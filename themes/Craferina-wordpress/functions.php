@@ -216,6 +216,13 @@ function craferina_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'craferina_scripts' );
 
+
+/**
+ * Enqueue fontawesome
+ */
+wp_register_script( 'FontAwesome', 'https://use.fontawesome.com/releases/v5.8.2/js/all.js', null, null, true );
+wp_enqueue_script('FontAwesome');
+
 /**
  * Implement the Custom Header feature.
  */

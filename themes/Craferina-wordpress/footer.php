@@ -13,16 +13,17 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer grid-x">
 		<nav id="social-navigation" class="social-navigation cell large-12 medium-12 grid-x align-middle">
 				<?php if(get_theme_mod('Craferina-wordpress_facebook_url') ||  get_theme_mod('Craferina-wordpress_twitter_url') ){?> 
 					<ul class="social-media">
 						<?php if(get_theme_mod('Craferina-wordpress_facebook_url')) {?> 
 							<li class="facebook">
 								<a href="<?php echo get_theme_mod('Craferina-wordpress_facebook_url')?>">
-									<img src="./assets/img/facebook.png" alt="facebook" >
+								<i class="fab fa-facebook"></i>
 								</a>
 							</li>
+							
 						<?php } ?>
 
 						<?php if(get_theme_mod('Craferina-wordpress_twitter_url')) {?> 
@@ -46,7 +47,17 @@
 				
 		</nav>
 		<!-- #social-media-navigation -->
-		<div class="site-info">
+
+		<nav id="footer-navigation" class="main-navigation cell large-12 medium-12 grid-x align-middle">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer',
+						'menu_id'        => 'footer-menu',
+					) );
+					?>
+			</nav><!-- #footer-menu-navigation -->
+
+		<div class="site-info cell large-12">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ecommerce-theme' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
