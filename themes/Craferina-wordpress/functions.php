@@ -285,6 +285,13 @@ function sample_theme_scripts() {
 		
 	);
 
+	wp_enqueue_style(
+		'singleProduct-css',
+		get_template_directory_uri() . '/assets/css/single-product.css',
+		null
+		
+	);
+
 	wp_enqueue_script(
 		'sample-theme-what-input',
 		get_template_directory_uri() . '/assets/js/vendor/what-input.js',
