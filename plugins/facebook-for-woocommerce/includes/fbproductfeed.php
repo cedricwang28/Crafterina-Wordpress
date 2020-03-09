@@ -127,25 +127,37 @@ if ( ! class_exists( 'WC_Facebook_Product_Feed' ) ) :
 		}
 
 		public function write_product_feed_file( $wp_ids ) {
+
 			try {
+
 				$feed_file =
 				fopen(
 					dirname( __FILE__ ) . DIRECTORY_SEPARATOR .
 					( self::FACEBOOK_CATALOG_FEED_FILENAME ),
 					'w'
 				);
+
 				fwrite( $feed_file, $this->get_product_feed_header_row() );
 
 				$product_group_attribute_variants = array();
+
 				foreach ( $wp_ids as $wp_id ) {
+
 					$woo_product = new WC_Facebook_Product( $wp_id );
+
 					if ( $woo_product->is_hidden() ) {
 						continue;
 					}
-					if ( get_option( 'woocommerce_hide_out_of_stock_items' ) === 'yes' &&
-					! $woo_product->is_in_stock() ) {
+
+					if ( get_option( 'woocommerce_hide_out_of_stock_items' ) === 'yes' && ! $woo_product->is_in_stock() ) {
 						continue;
 					}
+
+					// skip if not enabled for sync
+					if ( $woo_product->woo_product instanceof \WC_Product && ! \SkyVerge\WooCommerce\Facebook\Products::product_should_be_synced( $woo_product->woo_product ) ) {
+						continue;
+					}
+
 					$product_data_as_feed_row = $this->prepare_product_for_feed(
 						$woo_product,
 						$product_group_attribute_variants

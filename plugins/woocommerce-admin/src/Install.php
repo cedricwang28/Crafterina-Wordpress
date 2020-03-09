@@ -36,6 +36,10 @@ class Install {
 			'wc_admin_update_0230_rename_gross_total',
 			'wc_admin_update_0230_db_version',
 		),
+		'0.25.1' => array(
+			'wc_admin_update_0251_remove_unsnooze_action',
+			'wc_admin_update_0251_db_version',
+		),
 	);
 
 	/**
@@ -82,6 +86,8 @@ class Install {
 	 */
 	public static function handle_option_migration( $default, $new_option ) {
 		if ( isset( self::$migrated_options[ $new_option ] ) ) {
+			wc_maybe_define_constant( 'WC_ADMIN_MIGRATING_OPTIONS', true );
+
 			// Avoid infinite loops - this filter is applied in add_option(), update_option(), and get_option().
 			remove_filter( "default_option_{$new_option}", array( __CLASS__, 'handle_option_migration' ), 10, 2 );
 

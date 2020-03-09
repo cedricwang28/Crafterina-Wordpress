@@ -1,5 +1,12 @@
 *** ShipStation for WooCommerce ***
 
+= 4.1.33 - 2020-03-04 =
+* Tweak - Use code sniff version.
+* Tweak - WC 4.0 compatibility.
+
+= 4.1.32 - 2020-02-12 =
+* Fix - Export shipping address even when shipping country is not available.
+
 = 4.1.31 - 2020-01-15 =
 * Tweak - WP 5.3 compatibility.
 * Add   - Filter `woocommerce_shipstation_no_shipping_item` for when an item does not need shipping or is a fee.

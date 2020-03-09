@@ -173,7 +173,8 @@ class WC_Shipstation_API_Export extends WC_Shipstation_API_Request {
 			$shipto_xml = $xml->createElement( 'ShipTo' );
 
 			$shipping_country = $wc_gte_30 ? $order->get_shipping_country() : $order->shipping_country;
-			if ( empty( $shipping_country ) ) {
+			$shipping_address = $wc_gte_30 ? $order->get_shipping_address_1() : $order->shipping_address_1;
+			if ( empty( $shipping_country ) && empty( $shipping_address ) ) {
 				$name = ( $wc_gte_30 ? $order->get_billing_first_name() : $order->billing_first_name ) . ' ' . ( $wc_gte_30 ? $order->get_billing_last_name() : $order->billing_last_name );
 				$this->xml_append( $shipto_xml, 'Name', $name );
 				$this->xml_append( $shipto_xml, 'Company', $wc_gte_30 ? $order->get_billing_company() : $order->billing_company );

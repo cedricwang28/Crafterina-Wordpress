@@ -4,7 +4,7 @@ Tags: shipping, woocommerce, automattic
 Requires at least: 4.4
 Tested up to: 5.3
 Requires PHP: 5.6
-Stable tag: 4.1.31
+Stable tag: 4.1.33
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -45,6 +45,12 @@ For help setting up and configuring, please refer to our [user guide](https://do
 If you get stuck, you can ask for help in the Plugin Forum.
 
 == Changelog ==
+
+= 2020-03-04 - version 4.1.33 =
+* Tweak - Use code sniff version.
+
+= 2020-02-12 - version 4.1.32 =
+* Fix - Export shipping address even when shipping country is not available.
 
 = 2020-01-05 - version 4.1.31 =
 * Tweak - WP 5.3 compatibility.

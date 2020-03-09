@@ -1,34 +1,34 @@
-# <!=Copyright (C) 2020 WooCommerce
-# This file is distributed under the same license as the WooCommerce - ShipStation Integration package.=!>
+# Copyright (C) 2020 WooCommerce
+# This file is distributed under the same license as the WooCommerce - ShipStation Integration package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce - ShipStation Integration 4.1.31\n"
-"Report-Msgid-Bugs-To: https://docs.woocommerce.com\n"
-"POT-Creation-Date: 2020-01-15 23:38:45+00:00\n"
+"Project-Id-Version: WooCommerce - ShipStation Integration 4.1.33\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/woocommerce-shipstation\n"
+"POT-Creation-Date: 2020-03-04 12:02:08+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: node-wp-i18n 1.2.3\n"
 
-#: includes/api-requests/class-wc-shipstation-api-export.php:286
+#: includes/api-requests/class-wc-shipstation-api-export.php:287
 msgid "Total Discount"
 msgstr ""
 
-#: includes/api-requests/class-wc-shipstation-api-export.php:301
+#: includes/api-requests/class-wc-shipstation-api-export.php:302
 msgid "Order has been exported to Shipstation"
 msgstr ""
 
+#: includes/api-requests/class-wc-shipstation-api-export.php:313
 #. translators: 1: total count
-
-#: includes/api-requests/class-wc-shipstation-api-export.php:312
 msgid "Exported %s orders"
 msgstr ""
 
-#. translators: 1: field name
-
 #: includes/api-requests/class-wc-shipstation-api-request.php:45
+#. translators: 1: field name
 msgid "Missing required param: %s"
 msgstr ""
 
@@ -48,15 +48,13 @@ msgstr ""
 msgid "Cannot parse XML"
 msgstr ""
 
-#. translators: 1: order id
-
 #: includes/api-requests/class-wc-shipstation-api-shipnotify.php:223
+#. translators: 1: order id
 msgid "Order %s can not be found."
 msgstr ""
 
-#. translators: 1: order id
-
 #: includes/api-requests/class-wc-shipstation-api-shipnotify.php:231
+#. translators: 1: order id
 msgid "Invalid order ID: %s"
 msgstr ""
 
@@ -64,40 +62,34 @@ msgstr ""
 msgid "ShipNotify Item: "
 msgstr ""
 
-#. translators: 1: item name
-
 #: includes/api-requests/class-wc-shipstation-api-shipnotify.php:253
+#. translators: 1: item name
 msgid "Item %s is not shippable product. Skipping."
 msgstr ""
 
+#: includes/api-requests/class-wc-shipstation-api-shipnotify.php:271
 #. translators: 1) shipped items 2) carrier's name 3) shipped date, 4) tracking
 #. number
-
-#: includes/api-requests/class-wc-shipstation-api-shipnotify.php:271
 msgid "%1$s shipped via %2$s on %3$s with tracking number %4$s."
 msgstr ""
 
-#. translators: 1) number of shipped items 2) total shipped items 3) order ID
-
 #: includes/api-requests/class-wc-shipstation-api-shipnotify.php:287
+#. translators: 1) number of shipped items 2) total shipped items 3) order ID
 msgid "Shipped %1$d out of %2$d items in order %3$s"
 msgstr ""
 
-#. translators: 1) carrier's name 2) shipped date, 3) tracking number
-
 #: includes/api-requests/class-wc-shipstation-api-shipnotify.php:303
+#. translators: 1) carrier's name 2) shipped date, 3) tracking number
 msgid "Items shipped via %1$s on %2$s with tracking number %3$s (Shipstation)."
 msgstr ""
 
-#. translators: 1: order id
-
 #: includes/api-requests/class-wc-shipstation-api-shipnotify.php:310
+#. translators: 1: order id
 msgid "No items found - shipping entire order %d."
 msgstr ""
 
-#. translators: 1) order ID 2) shipment status
-
 #: includes/api-requests/class-wc-shipstation-api-shipnotify.php:336
+#. translators: 1) order ID 2) shipment status
 msgid "Updated order %1$s to status %2$s"
 msgstr ""
 
@@ -114,9 +106,8 @@ msgstr ""
 msgid "Invalid request"
 msgstr ""
 
-#. translators: 1: query string
-
 #: includes/class-wc-shipstation-api.php:72
+#. translators: 1: query string
 msgid "Input params: %s"
 msgstr ""
 
@@ -126,7 +117,9 @@ msgid "ShipStation"
 msgstr ""
 
 #: includes/class-wc-shipstation-integration.php:23
-msgid "ShipStation allows you to retrieve &amp; manage orders, then print labels &amp; packing slips with ease."
+msgid ""
+"ShipStation allows you to retrieve &amp; manage orders, then print labels "
+"&amp; packing slips with ease."
 msgstr ""
 
 #: includes/class-wc-shipstation-integration.php:108
@@ -137,27 +130,31 @@ msgstr ""
 msgid "Dismiss"
 msgstr ""
 
-#. translators: %s: ShipStation URL
-
 #: includes/class-wc-shipstation-integration.php:118
-msgid "To begin printing shipping labels with ShipStation head over to <a class=\"shipstation-external-link\" href=\"%s\" target=\"_blank\">ShipStation.com</a> and log in or create a new account."
+#. translators: %s: ShipStation URL
+msgid ""
+"To begin printing shipping labels with ShipStation head over to <a "
+"class=\"shipstation-external-link\" href=\"%s\" "
+"target=\"_blank\">ShipStation.com</a> and log in or create a new account."
 msgstr ""
 
-#. translators: %s: ShipStation Auth Key
-
 #: includes/class-wc-shipstation-integration.php:136
-msgid "After logging in, add a selling channel for WooCommerce and use your Auth Key (<code>%s</code>) to connect your store."
+#. translators: %s: ShipStation Auth Key
+msgid ""
+"After logging in, add a selling channel for WooCommerce and use your Auth "
+"Key (<code>%s</code>) to connect your store."
 msgstr ""
 
 #: includes/class-wc-shipstation-integration.php:143
 msgid "Once connected you're good to go!"
 msgstr ""
 
+#: includes/class-wc-shipstation-integration.php:150
 #. translators: %1$s: ShipStation plugin settings URL, %2$s: ShipStation
 #. documentation URL
-
-#: includes/class-wc-shipstation-integration.php:150
-msgid "You can find other settings for this extension <a href=\"%1$s\">here</a> and view the documentation <a href=\"%2$s\">here</a>."
+msgid ""
+"You can find other settings for this extension <a href=\"%1$s\">here</a> "
+"and view the documentation <a href=\"%2$s\">here</a>."
 msgstr ""
 
 #: includes/class-wc-shipstation-privacy.php:14
@@ -168,10 +165,13 @@ msgstr ""
 msgid "WooCommerce ShipStation Data"
 msgstr ""
 
-#. translators: 1: URL to documentation
-
 #: includes/class-wc-shipstation-privacy.php:50
-msgid "By using this extension, you may be storing personal data or sharing data with an external service. <a href=\"%s\" target=\"_blank\">Learn more about how this works, including what you may want to include in your privacy policy.</a>"
+#. translators: 1: URL to documentation
+msgid ""
+"By using this extension, you may be storing personal data or sharing data "
+"with an external service. <a href=\"%s\" target=\"_blank\">Learn more about "
+"how this works, including what you may want to include in your privacy "
+"policy.</a>"
 msgstr ""
 
 #: includes/class-wc-shipstation-privacy.php:73
@@ -203,7 +203,9 @@ msgid "Copy and paste this key into ShipStation during setup."
 msgstr ""
 
 #: includes/data/data-settings.php:36
-msgid "This is the <code>Auth Key</code> you set in ShipStation and allows ShipStation to communicate with your store."
+msgid ""
+"This is the <code>Auth Key</code> you set in ShipStation and allows "
+"ShipStation to communicate with your store."
 msgstr ""
 
 #: includes/data/data-settings.php:43
@@ -223,7 +225,9 @@ msgid "Shipped Order Status&hellip;"
 msgstr ""
 
 #: includes/data/data-settings.php:58
-msgid "Define the order status you wish to update to once an order has been shipping via ShipStation. By default this is \"Completed\"."
+msgid ""
+"Define the order status you wish to update to once an order has been "
+"shipping via ShipStation. By default this is \"Completed\"."
 msgstr ""
 
 #: includes/data/data-settings.php:63
@@ -238,10 +242,11 @@ msgstr ""
 msgid "Log all API interations."
 msgstr ""
 
-#. translators: %s WC download URL link.
-
 #: woocommerce-shipstation.php:28
-msgid "Shipstation requires WooCommerce to be installed and active. You can download %s here."
+#. translators: %s WC download URL link.
+msgid ""
+"Shipstation requires WooCommerce to be installed and active. You can "
+"download %s here."
 msgstr ""
 
 #: woocommerce-shipstation.php:98
@@ -255,6 +260,7 @@ msgstr ""
 #: woocommerce-shipstation.php:100
 msgid "Docs"
 msgstr ""
+
 #. Plugin Name of the plugin/theme
 msgid "WooCommerce - ShipStation Integration"
 msgstr ""
@@ -264,7 +270,9 @@ msgid "https://woocommerce.com/products/shipstation-integration/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Adds ShipStation label printing support to WooCommerce. Requires server DomDocument support."
+msgid ""
+"Adds ShipStation label printing support to WooCommerce. Requires server "
+"DomDocument support."
 msgstr ""
 
 #. Author of the plugin/theme

@@ -71,6 +71,37 @@ Release and roadmap notes are available on the [WooCommerce Developers Blog](htt
 
 == Changelog ==
 
+= 1.0.0 2020-03-5 =
+
+- Fix: Customers Report: fix missing report param in search #3778
+- Fix: OBW Connect: Fix requesting state #3786
+- Fix: OBW: Fix retry plugin install button disappearing #3787
+- Fix: Update Country Labeling to Match Core #3790
+- Fix: Onboarding: Enable taxes when automatic taxes are setup #3795
+- Dev: Onboarding: Remove old development flags #3809
+- Fix: Padding on Jetpack notices when activity panel is present. $3418
+- Fix: Taxes Report search. #3815
+- Fix: Taxes Report search bug and adds initial documentation. #3816
+- Fix: Activity Panels: Remove W Panel #3827
+- Fix: Tracking on migrated options #3828
+
+= 0.26.0 2020-02-21 =
+
+- Fix: Warning in product data store when tax amount is non-numeric. #3656
+- Fix: Enable onboarding in production. #3680
+- Enhancement: Move Customers report to WooCommerce Menu #3632
+- Performance: Remove slow physical products query from non setup checklist pages #3722
+- Tweak: use cron instead of Action Scheduler for unsnoozing notes. #3662
+- Dev: Add tracks events when profiler steps are completed #3726
+- Dev: Ensure continue setup loads the onboarding profiler #3646
+- Fix: Added new control in /packages/components/src/select-control/list.js #3700
+- Fix: Alignment of select text #3723 👏 @edmundcwm
+- Performance: Make Stock Panel indicator more performant. #3729
+- Performance: Remove sideloaded images to save on build size #3731
+- Fix: Create Onboarding homepage without redirect #3727
+- Add: Deactivation note for feature plugin #3687
+- Dev: Travis tests on Github for release branch #3751
+
 = 0.25.0 2020-01-29 =
 
 - Fix: Onboarding: Mark profiler complete on WC update #3590 (On Merge to WC Core, Onboarding) 
