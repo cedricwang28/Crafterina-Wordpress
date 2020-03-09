@@ -102,7 +102,7 @@ header{
 	position: relative;
 }
 .woocommerce-result-count{
-	margin-top: 40px;
+	margin-top: 10vh;
 }
 
 .attachment-woocommerce_thumbnail{
@@ -171,9 +171,19 @@ main{
 	transform: translate(0,-6vh);
 }
 
+/* .site-main .woocommerce-breadcrumb{
+	margin-top: 8vh;
+} */
 
+.single_add_to_cart_button{
+	background-color: #E9B8AC;
+	border: none;
+}
 
-
+.woocommerce-loop-product__title{
+	color:#33383F;
+	font-size: 20px !important;
+}
 
 
 
