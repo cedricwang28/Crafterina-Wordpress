@@ -163,6 +163,11 @@ h2{
 }
 
 .wp-block-group__inner-container{
+	padding: 3%;
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
+}
+
+.wp-image-136{ 
+	margin-left: 10%;
 }
