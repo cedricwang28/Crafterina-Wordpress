@@ -158,15 +158,18 @@ h2{
 }
 
 .wp-block-group__inner-container{
+	text-transform: capitalize;
 	font-size: 1.2em;
 	margin-top: 5%;
-}
-
-.wp-block-group__inner-container{
 	padding: 3%;
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
 }
+
+.wp-block-group__inner-container p{
+}
+
+
 
 .wp-image-136{ 
 	margin-left: 10%;
