@@ -185,6 +185,19 @@ main{
 	font-size: 20px !important;
 }
 
+#primary-menu li a{
+	font-size: 18px;
+}
+#primary-menu{
+	float:right;
+	margin-right: 3vw;
+}
+
+.custom-logo{
+	margin-left: 2vw;
+}
+
+
 
 
 
