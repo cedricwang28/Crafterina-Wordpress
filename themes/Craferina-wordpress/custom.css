@@ -208,7 +208,20 @@ main{
 	cursor: pointer;
 }
 
-
+.entry-summary{
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+.related h2{
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 4vh;
+}
+#tab-description h2{
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 5vh;
+}
 
 
 
