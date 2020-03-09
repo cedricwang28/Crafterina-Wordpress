@@ -1,40 +1,78 @@
 <?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Craferina
+/*
+ * Template Name: Custom
  */
 
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main grid-x grid-margin-x">
+			<div class=" cell large-1"></div>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+			<article class="cell large-10" id="bodyText">
+			<aside >
+				<?php
+				/**
+				 * Custom WP_Query
+				 */
+				$args = array(
+					'post_type'      => 'post',
+					'posts_per_page' => 6,
+				);
 
-			get_template_part( 'template-parts/content', 'page' );
+				$test_query = new WP_Query( $args );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+				if ( $test_query->have_posts() ) {
+				?>
+					<div>
+						<div class="post-list height-1">
+							<div class="grid-x grid-margin-x grid-margin-y">
+								
+								<?php
+								while ( $test_query->have_posts() ) {
+									$test_query->the_post();
+									?>
+									<div class="cell small-12 medium-12 large-12 custom post-list-wrapper">
+										<div id="post-<?php echo get_the_ID(); ?>">
+											<a href="<?php the_permalink(); ?>"><h4 class="text-center postTitle"><?php echo get_the_title(); ?></h4></a>
+											<!-- post-thumbnail -->
+											<div class="custom post-thumbnail">
+												<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+											</div><!-- post-thumbnail -->
+											<p class="postExcerpt"><?php echo get_the_excerpt(); ?></p>
+										</div>
+									</div>
+								<?php } ?>
+							</div>
+						</div>
+					</div>
+				<?php
+				}
+				wp_reset_postdata();
+				?>
+			</aside>
+				<?php
+					/* Start the Loop */
+					while ( have_posts() ) :
+						the_post();    
 
-		endwhile; // End of the loop.
-		?>
+						get_template_part( 'template-parts/content/content', 'page' );
+					
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) {
+							comments_template();
+						}
+					endwhile; // End of the loop.
+				?>
+			</article>	
+			<div class='cell large-1'></div>
+			
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+	</section><!-- #primary -->
 
 <?php
-// get_sidebar();
 get_footer();
+
+
