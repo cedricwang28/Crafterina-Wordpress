@@ -147,8 +147,17 @@ main{
 	margin-bottom: 5vh;
 }
 
+.entry-header h1{
+	margin-top: 7vh;
+	margin-bottom: 5vh;
+	font-size: 30px;
+	text-align: center;
+}
 
-
+#wsf-1-field-7{
+	background-color: #E9B8AC;
+	border: none;
+}
 
 
 
