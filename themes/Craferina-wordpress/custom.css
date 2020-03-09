@@ -197,6 +197,16 @@ main{
 	margin-left: 2vw;
 }
 
+.fa-bars{
+	position: absolute;
+	right: 6vw;
+	top: 55px;
+	font-size: 25px;
+	display: none;
+}
+.fa-bars:hover{
+	cursor: pointer;
+}
 
 
 
@@ -208,6 +218,18 @@ main{
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 4vw;
 	
+	}
+
+	
+}
+
+@media only screen and (max-width:850px){
+	
+	#primary-menu{
+		display: none;
+	}
+	.fa-bars{
+		display: block;
 	}
 }
 

@@ -31,6 +31,7 @@
 		<nav id="site-navigation" class="main-navigation cell large-10 middle-9 small-9" role="navigation">
 			
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+			<i class="fas fa-bars"></i>
 		</nav>
 
 		<!-- <div class="cell large-4 medium-4">
