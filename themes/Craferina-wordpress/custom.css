@@ -26,12 +26,21 @@
 	color: grey;
 }
 #social-navigation{
-	height: 100px;
+	height: 1vh;
 	text-align: center;
 }
 
+#social-navigation ul.social-media {
+	width: 100%;
+    display: flex;
+	justify-content: center;
+	margin-top:-5em;
+}
 
-
+#footer-navigation {
+	display:flex;
+	justify-content: center;
+}
 #colophon div{
 
 	font-size: 13px;
@@ -42,7 +51,7 @@ li{
 	list-style: none;
 	float: left;
     color: #000;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     font-size: 25px;
 }
 nav{
