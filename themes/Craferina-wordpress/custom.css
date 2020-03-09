@@ -159,8 +159,17 @@ main{
 	border: none;
 }
 
+.product_type_simple{
+	background-color: #E9B8AC;
+	border: none;
+}
 
-
+.columns-3 ul.products li.product {
+    width: 100%;
+}
+.orderby{
+	transform: translate(0,-6vh);
+}
 
 
 
