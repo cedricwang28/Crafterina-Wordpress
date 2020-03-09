@@ -158,7 +158,11 @@ h2{
 }
 
 .wp-block-group__inner-container{
-	width:70%;
-	margin-left: 15%;
 	font-size: 1.2em;
+	margin-top: 5%;
+}
+
+.wp-block-group__inner-container{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
 }
