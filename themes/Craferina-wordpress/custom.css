@@ -45,6 +45,9 @@
 
 	font-size: 13px;
 }
+#colophon svg{
+	margin:0 5px;
+}
 
 
 li{
@@ -130,6 +133,27 @@ main{
 }
 
 
+.post-list .wp-post-image{
+	width: 200px;
+}
+.post-list h4{
+	text-align: left;
+	color: darkblue;
+	font-size: 20px;
+
+}
+.post-list{
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -163,3 +187,8 @@ main{
 	
 	}
 }
+
+
+
+
+
