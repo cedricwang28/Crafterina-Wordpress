@@ -156,3 +156,7 @@ h2{
 	width: 100vw;
 	height: 100vh;
 }
+
+.wp-block-group__inner-container{
+	width:50%;
+}
