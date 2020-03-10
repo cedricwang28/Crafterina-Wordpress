@@ -377,7 +377,20 @@ main{
 	
 }
 
-
+.wp-block-group__inner-container{
+	display: flex;
+	align-items: center;
+	padding: 2vh 3vw;
+	margin-top: 8vh;
+	border-top: 1px grey solid;
+	border-bottom: 1px grey solid;
+}
+.wp-block-group__inner-container p{
+	flex: 2;
+}
+.wp-block-group__inner-container figure{
+	flex: 1;
+}
 
 
 
@@ -412,6 +425,27 @@ main{
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 4vw;
 	
+	}
+}
+
+@media only screen and (max-width:750px){
+	.wp-block-group__inner-container p{
+		flex: 1;
+	}
+	.wp-block-group__inner-container figure{
+		flex: 1;
+	}
+}
+
+@media only screen and (max-width:630px){
+	.wp-block-group__inner-container{
+		display: grid;
+		grid-auto-columns: 1fr;
+		align-items: center;
+		padding: 2vh 3vw;
+		margin-top: 8vh;
+		border-top: 1px grey solid;
+		border-bottom: 1px grey solid;
 	}
 }
 
