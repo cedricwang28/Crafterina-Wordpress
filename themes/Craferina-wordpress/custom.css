@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Viaoda+Libre&display=swap');
+
+
 *{
 	margin:0;
 	padding:0;
@@ -233,6 +237,34 @@ header{
 
 }
 
+.blocks-gallery-grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 0 2vw;
+	
+}
+.blocks-gallery-grid .blocks-gallery-item{
+	width:100% !important;
+}
+.blocks-gallery-grid img{
+	border-radius: 5px;
+}
+.entry-content{
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+#post-70 h3{
+	margin-top: 10vh;
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: -10vh;
+}
+#post-70 h4{
+	margin-top: 10vh;
+	font-family: 'Viaoda Libre', cursive;
+}
+.wp-block-gallery{
+	margin-bottom: 5vh;
+}
 
 
 
