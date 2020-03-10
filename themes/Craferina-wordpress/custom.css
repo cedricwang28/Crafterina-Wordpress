@@ -329,6 +329,9 @@ main{
 	padding: 5px 10px;
 	border-radius: 5px;
 }
+.woocommerce-MyAccount-navigation ul li a:hover{
+	color:white;
+}
 
 .logged-in-as{
 	display: none;
@@ -345,7 +348,23 @@ main{
 .woocommerce-Address-title h3{
 	font-size: 20px;
 }
-
+.status-publish p{
+	display: block;
+	
+}
+.attachment-post-thumbnail{
+	margin:0 auto;
+	width: 60%;
+	margin-left: 2vw;
+	margin-bottom: 5vh;
+}
+.entry-meta{
+	margin-left: 2vw
+}
+.submit{
+	background-color:#E9B8AC;
+	padding: 5px 10px;
+}
 
 
 
