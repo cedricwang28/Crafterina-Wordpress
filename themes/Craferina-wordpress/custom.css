@@ -5,7 +5,9 @@
 	padding:0;
 }
 
-
+.site-main{
+	margin-top: 15%;
+}
 
 #masthead{
 	background-color: white;
@@ -137,7 +139,6 @@ a:focus, a:hover {
 }
 
 .wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_image {
-
     display: block;
     height: auto;
     max-height: 100%;
@@ -148,6 +149,7 @@ a:focus, a:hover {
     margin-left: auto;
 	margin-right: auto;
 }
+
 
 main{
 	padding: 0 2vw;
