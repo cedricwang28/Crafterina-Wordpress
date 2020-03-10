@@ -109,9 +109,6 @@ header{
 	
 }
 
-main{
-	padding:0 2vw;
-}
 
 .orderby{
 	width: 160px;
@@ -222,6 +219,27 @@ main{
 	font-weight: bold;
 	margin-top: 5vh;
 }
+
+.post-70 h1{
+	display: none;
+}
+.entry-content p{
+	display: none;
+}
+.wp-image-202{
+	margin-top: 30px;
+	width: 100%;
+	
+
+}
+
+
+
+
+
+
+
+
 
 
 
