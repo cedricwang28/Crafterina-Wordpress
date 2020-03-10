@@ -217,6 +217,7 @@ header{
 	font-size: 25px;
 	font-weight: bold;
 	margin-top: 4vh;
+	font-family: 'Oswald', sans-serif;
 }
 #tab-description h2{
 	font-size: 25px;
@@ -283,7 +284,22 @@ main{
 	width: 100%;
 	margin-bottom: 10vh;
 }
-
+.wc-tabs{
+	height: 8vh;
+	border:none;
+}
+.description_tab a{
+	font-size: 18px;
+	line-height: 20px;
+}
+.reviews_tab a{
+	font-size: 18px;
+	line-height: 20px;
+	margin-left: 5vw;
+}
+.reviews_tab{
+	margin-left: 5vw;
+}
 
 
 
