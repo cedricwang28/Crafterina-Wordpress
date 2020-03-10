@@ -365,6 +365,18 @@ main{
 	background-color:#E9B8AC;
 	padding: 5px 10px;
 }
+.woocommerce-EditAccountForm{
+	margin-left: 5vw;
+}
+.woocommerce-Button{
+	background-color:#E9B8AC;
+	border-radius: 5px;
+}
+.woocommerce-MyAccount-content{
+	display: grid;
+	
+}
+
 
 
 
