@@ -325,6 +325,13 @@ main{
 	font-size: 18px;
 }
 
+.logged-in-as{
+	display: none;
+}
+#reply-title{
+	margin-top: 20vh;
+	font-size: 22px;
+}
 
 
 
