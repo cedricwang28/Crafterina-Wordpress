@@ -266,9 +266,23 @@ header{
 	margin-bottom: 5vh;
 }
 
+main{
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+.post-edit-link{
+	display: none;
+}
 
-
-
+.showcoupon, .woocommerce-info{
+	display: none;
+}
+.alt{
+	background-color: #E9B8AC;
+	border: none;
+	width: 100%;
+	margin-bottom: 10vh;
+}
 
 
 
