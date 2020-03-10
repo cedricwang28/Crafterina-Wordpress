@@ -324,6 +324,10 @@ main{
 	height: 10vh;
 	font-size: 18px;
 	line-height: 10vh;
+	color: grey;
+	background-color:#E9B8AC ;
+	padding: 5px 10px;
+	border-radius: 5px;
 }
 
 .logged-in-as{
