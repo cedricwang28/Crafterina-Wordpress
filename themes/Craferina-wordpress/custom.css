@@ -316,7 +316,14 @@ main{
 .woocommerce-Tabs-panel h2{
 	display: none;
 }
-
+.woocommerce-MyAccount-navigation ul{
+	display: grid;
+	
+}
+.woocommerce-MyAccount-navigation ul li{
+	height: 10vh;
+	font-size: 18px;
+}
 
 
 
