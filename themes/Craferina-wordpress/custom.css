@@ -320,9 +320,10 @@ main{
 	display: grid;
 	
 }
-.woocommerce-MyAccount-navigation ul li{
+.woocommerce-MyAccount-navigation ul li a{
 	height: 10vh;
 	font-size: 18px;
+	line-height: 10vh;
 }
 
 .logged-in-as{
