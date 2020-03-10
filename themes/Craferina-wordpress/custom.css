@@ -183,10 +183,11 @@ h2{
 	padding: 3%;
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
-	font-family: 'Noto Sans KR';
 }
 
 .wp-block-group__inner-container p{
+	font-family: 'Noto Sans KR';
+
 }
 
 
