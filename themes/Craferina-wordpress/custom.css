@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Viaoda+Libre&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Bellota&display=swap');
 
 *{
 	margin:0;
@@ -392,6 +392,23 @@ main{
 	flex: 1;
 }
 
+#footer-menu li{
+	font-size: 1.2rem;
+}
+.custom-logo{
+	width: 120px;
+	height: 120px;
+	margin-left: 4vw;
+}
+.wp-image-202{
+	margin-top: -3vh;
+}
+.woocommerce-loop-product__title{
+	font-family: 'Oswald', sans-serif;
+}
+.price{
+	font-size: 18px;
+}
 
 
 
