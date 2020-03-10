@@ -136,6 +136,19 @@ a:focus, a:hover {
 
 }
 
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_image {
+
+    display: block;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-left: auto;
+	margin-right: auto;
+}
+
 main{
 	padding: 0 2vw;
 }
