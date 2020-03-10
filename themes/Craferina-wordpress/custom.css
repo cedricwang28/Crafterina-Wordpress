@@ -445,6 +445,12 @@ main{
 		grid-gap: 4vw;
 	
 	}
+	.custom-logo{
+		width: 100px;
+		height: 100px;
+		margin-left: 4vw;
+	}
+	
 }
 
 @media only screen and (max-width:750px){
