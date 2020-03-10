@@ -409,7 +409,9 @@ main{
 .price{
 	font-size: 18px;
 }
-
+.woocommerce-noreviews{
+	display: none !important;
+}
 
 
 
