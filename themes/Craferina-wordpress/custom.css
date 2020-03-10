@@ -101,6 +101,9 @@ a:focus, a:hover {
 .page-title{
 	display: none;
 }
+.entry-title{
+	display: none;
+}
 
 .wp-image-32{
 	display: block;
