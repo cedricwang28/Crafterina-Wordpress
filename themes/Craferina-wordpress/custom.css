@@ -19,12 +19,34 @@
 	text-align: center;
 	color:white;
 	font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
-	display: flex;
+	
 	padding:40px 0px;
 }
+#colophon a{
+	color: grey;
+}
+#social-navigation{
+	height: 1vh;
+	text-align: center;
+}
+
+#social-navigation ul.social-media {
+	width: 100%;
+    display: flex;
+	justify-content: center;
+	margin-top:-5em;
+}
+
+#footer-navigation {
+	display:flex;
+	justify-content: center;
+}
 #colophon div{
-	flex: 1;
+
 	font-size: 13px;
+}
+#colophon svg{
+	margin:0 5px;
 }
 
 
@@ -32,7 +54,7 @@ li{
 	list-style: none;
 	float: left;
     color: #000;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     font-size: 25px;
 }
 nav{
@@ -80,7 +102,7 @@ header{
 	position: relative;
 }
 .woocommerce-result-count{
-	margin-top: 40px;
+	margin-top: 10vh;
 }
 
 .attachment-woocommerce_thumbnail{
@@ -102,7 +124,7 @@ main{
 }
 
 .widget-area .search-form{
-	/* display: none; */
+	
 }
 
 
@@ -111,10 +133,95 @@ main{
 }
 
 
+.post-list .wp-post-image{
+	width: 200px;
+}
+.post-list h4{
+	text-align: left;
+	color: darkblue;
+	font-size: 20px;
 
+}
+.post-list{
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+}
 
+.entry-header h1{
+	margin-top: 7vh;
+	margin-bottom: 5vh;
+	font-size: 30px;
+	text-align: center;
+}
 
+#wsf-1-field-7{
+	background-color: #E9B8AC;
+	border: none;
+}
 
+.product_type_simple{
+	background-color: #E9B8AC;
+	border: none;
+}
+
+.columns-3 ul.products li.product {
+    width: 100%;
+}
+.orderby{
+	transform: translate(0,-6vh);
+}
+
+/* .site-main .woocommerce-breadcrumb{
+	margin-top: 8vh;
+} */
+
+.single_add_to_cart_button{
+	background-color: #E9B8AC;
+	border: none;
+}
+
+.woocommerce-loop-product__title{
+	color:#33383F;
+	font-size: 20px !important;
+}
+
+#primary-menu li a{
+	font-size: 18px;
+}
+#primary-menu{
+	float:right;
+	margin-right: 3vw;
+}
+
+.custom-logo{
+	margin-left: 2vw;
+}
+
+.fa-bars{
+	position: absolute;
+	right: 6vw;
+	top: 55px;
+	font-size: 25px;
+	display: none;
+}
+.fa-bars:hover{
+	cursor: pointer;
+}
+
+.entry-summary{
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+.related h2{
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 4vh;
+}
+#tab-description h2{
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 5vh;
+}
 
 
 
@@ -124,6 +231,18 @@ main{
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 4vw;
 	
+	}
+
+	
+}
+
+@media only screen and (max-width:850px){
+	
+	#primary-menu{
+		display: none;
+	}
+	.fa-bars{
+		display: block;
 	}
 }
 
@@ -144,3 +263,8 @@ main{
 	
 	}
 }
+
+
+
+
+

@@ -1,0 +1,12 @@
+select[multiple] {
+	height: auto;
+}
+
+.wsf-tab-disabled {
+	pointer-events: none;
+}
+
+.wsf-tab-disabled.tab-title>a {
+	color: #cacaca;
+    cursor: not-allowed;
+}

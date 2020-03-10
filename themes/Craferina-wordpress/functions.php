@@ -216,6 +216,13 @@ function craferina_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'craferina_scripts' );
 
+
+/**
+ * Enqueue fontawesome
+ */
+wp_register_script( 'FontAwesome', 'https://use.fontawesome.com/releases/v5.8.2/js/all.js', null, null, true );
+wp_enqueue_script('FontAwesome');
+
 /**
  * Implement the Custom Header feature.
  */
@@ -274,6 +281,13 @@ function sample_theme_scripts() {
 	wp_enqueue_style(
 		'custom-css',
 		get_template_directory_uri() . '/custom.css',
+		null
+		
+	);
+
+	wp_enqueue_style(
+		'singleProduct-css',
+		get_template_directory_uri() . '/assets/css/single-product.css',
 		null
 		
 	);

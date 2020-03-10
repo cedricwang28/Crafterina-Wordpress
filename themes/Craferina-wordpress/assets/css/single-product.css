@@ -1,0 +1,17 @@
+.single-product div.product {
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper {
+    grid-column: 1/3;
+}
+
+.related.products {
+    grid-column: 1/3;
+}
+.related.products ul {
+    display:flex;
+    justify-content: space-around;
+}

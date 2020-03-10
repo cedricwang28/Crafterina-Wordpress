@@ -24,16 +24,17 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header  grid-x">
-		<div class="cell large-2 middle-2">
+		<div class="cell large-2 middle-3 small-3">
 			<?php the_custom_logo(); ?>
 		</div>
 		
-		<nav id="site-navigation" class="main-navigation cell large-6 middle-6" role="navigation">
+		<nav id="site-navigation" class="main-navigation cell large-10 middle-9 small-9" role="navigation">
 			
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+			<i class="fas fa-bars"></i>
 		</nav>
 
-		<div class="cell large-4 medium-4">
+		<!-- <div class="cell large-4 medium-4">
 			<?php
 				if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 					return;
@@ -42,7 +43,7 @@
 			<div id="secondary" class="widget-area">
 				<?php dynamic_sidebar( 'sidebar-1' ); ?>
 			</div>
-		</div>
+		</div> -->
 
 	</header>
 
