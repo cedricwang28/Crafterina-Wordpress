@@ -479,9 +479,10 @@ main{
 		background-color: white;
 		border:2px grey solid;
 		position: absolute;
-		top: 20vh;
+		top: 18vh;
 		left: 0;
 		width: 100%;
+		z-index: 100;
 	}
 	#primary-menu li{
 		display: block !important;
