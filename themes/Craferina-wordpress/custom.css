@@ -115,7 +115,7 @@ header{
 	
 }
 
-
+/*product page*/
 .orderby{
 	width: 160px;
 	position: absolute;
@@ -126,16 +126,14 @@ header{
 	width: 100% !important;
 }
 
-.widget-area .search-form{
-	
-}
+
 
 
 .onsale{
 	display: none;
 }
 
-
+/*post page*/
 .post-list .wp-post-image{
 	width: 200px;
 }
@@ -199,7 +197,7 @@ header{
 .custom-logo{
 	margin-left: 2vw;
 }
-
+/*font awesome*/
 .fa-bars{
 	position: absolute;
 	right: 6vw;
@@ -240,7 +238,7 @@ header{
 	
 
 }
-
+/*homepage gallery*/
 .blocks-gallery-grid{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -312,6 +310,7 @@ main{
 .site-main{
 	padding-top: 5vh;
 }
+/*woocommerce-breadcrumb*/
 .woocommerce-breadcrumb{
 	display:none;
 }
