@@ -429,8 +429,16 @@ main{
 .readMore{
 	color:#E9B8AC;
 }
-
-
+#footerArticle{
+	margin-top: 10vh;
+}
+#footerArticle h1{
+	font-size: 24px;
+	font-family: roboto;
+}
+#footerArticle article{
+	margin-top: -9vh;
+}
 
 
 
