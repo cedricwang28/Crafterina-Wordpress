@@ -461,6 +461,7 @@ main{
 	
 }
 
+/*media query for size less than 850px*/
 @media only screen and (max-width:850px){
 	
 	#primary-menu{
