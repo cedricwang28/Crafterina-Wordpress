@@ -242,6 +242,12 @@ require get_template_directory() . '/inc/template-hooks.php';
  * custom block editor 
  */
 require get_template_directory() . '/inc/block-editor.php';
+
+/**
+ * custom post types
+ */
+require get_template_directory() . '/inc/post-types.php';
+
 /**
  * Customizer additions.
  */
@@ -290,6 +296,14 @@ function sample_theme_scripts() {
 		get_template_directory_uri() . '/assets/css/single-product.css',
 		null
 		
+	);
+	
+	wp_enqueue_script(
+		'sample-theme-app-js',
+		get_template_directory_uri() . '/assets/js/app.js',
+		array( 'jquery' ),
+		'6.5.1',
+		true
 	);
 
 	wp_enqueue_script(

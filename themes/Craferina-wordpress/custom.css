@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bellota&display=swap');
+
 *{
 	margin:0;
 	padding:0;
 }
-
+/*header*/
 #masthead{
 	background-color: white;
 	height: 20vh;
@@ -14,6 +18,7 @@
 
 }
 
+/*footer*/
 #colophon{
 	background-color: #F7DDD9;
 	text-align: center;
@@ -25,6 +30,7 @@
 #colophon a{
 	color: grey;
 }
+/*footer social link*/
 #social-navigation{
 	height: 1vh;
 	text-align: center;
@@ -109,10 +115,7 @@ header{
 	
 }
 
-main{
-	padding:0 2vw;
-}
-
+/*product page*/
 .orderby{
 	width: 160px;
 	position: absolute;
@@ -123,16 +126,14 @@ main{
 	width: 100% !important;
 }
 
-.widget-area .search-form{
-	
-}
+
 
 
 .onsale{
 	display: none;
 }
 
-
+/*post page*/
 .post-list .wp-post-image{
 	width: 200px;
 }
@@ -196,7 +197,7 @@ main{
 .custom-logo{
 	margin-left: 2vw;
 }
-
+/*font awesome*/
 .fa-bars{
 	position: absolute;
 	right: 6vw;
@@ -216,6 +217,8 @@ main{
 	font-size: 25px;
 	font-weight: bold;
 	margin-top: 4vh;
+	font-family: 'Oswald', sans-serif;
+	
 }
 #tab-description h2{
 	font-size: 25px;
@@ -223,8 +226,240 @@ main{
 	margin-top: 5vh;
 }
 
+.post-70 h1{
+	display: none;
+}
+.entry-content p{
+	display: none;
+}
+.wp-image-202{
+	margin-top: 30px;
+	width: 100%;
+	
+
+}
+/*homepage gallery*/
+.blocks-gallery-grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 0 2vw;
+	
+}
+.blocks-gallery-grid .blocks-gallery-item{
+	width:100% !important;
+}
+.blocks-gallery-grid img{
+	border-radius: 5px;
+}
+.entry-content{
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+#post-70 h3{
+	margin-top: 10vh;
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: -10vh;
+}
+#post-70 h4{
+	margin-top: 10vh;
+	font-family: 'Viaoda Libre', cursive;
+}
+.wp-block-gallery{
+	margin-bottom: 5vh;
+}
+
+main{
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+.post-edit-link{
+	display: none;
+}
+
+.showcoupon, .woocommerce-info{
+	display: none;
+}
+.alt{
+	background-color: #E9B8AC;
+	border: none;
+	width: 100%;
+	margin-bottom: 10vh;
+}
+.wc-tabs{
+	height: 8vh;
+	border:none;
+}
+.description_tab a{
+	font-size: 18px;
+	line-height: 20px;
+}
+.reviews_tab a{
+	font-size: 18px;
+	line-height: 20px;
+	margin-left: 5vw;
+}
+.reviews_tab{
+	margin-left: 5vw;
+}
+.size-woocommerce_thumbnail{
+	border-radius: 7px;
+}
+.wsf-button-primary{
+	margin-bottom: 10vh !important;
+}
+.site-main{
+	padding-top: 5vh;
+}
+/*woocommerce-breadcrumb*/
+.woocommerce-breadcrumb{
+	display:none;
+}
+.woocommerce-Tabs-panel h2{
+	display: none;
+}
+.woocommerce-MyAccount-navigation ul{
+	display: grid;
+	
+}
+.woocommerce-MyAccount-navigation ul li a{
+	height: 10vh;
+	font-size: 18px;
+	line-height: 10vh;
+	color: grey;
+	background-color:#E9B8AC ;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.woocommerce-MyAccount-navigation ul li a:hover{
+	color:white;
+}
+
+.logged-in-as{
+	display: none;
+}
+#reply-title{
+	margin-top: 20vh;
+	font-size: 22px;
+}
+.woocommerce-Address{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+}
+.woocommerce-Address-title h3{
+	font-size: 20px;
+}
+.status-publish p{
+	display: block;
+	
+}
+.attachment-post-thumbnail{
+	margin:0 auto;
+	width: 60%;
+	margin-left: 2vw;
+	margin-bottom: 5vh;
+}
+.entry-meta{
+	margin-left: 2vw
+}
+.submit{
+	background-color:#E9B8AC;
+	padding: 5px 10px;
+}
+.woocommerce-EditAccountForm{
+	margin-left: 5vw;
+}
+.woocommerce-Button{
+	background-color:#E9B8AC;
+	border-radius: 5px;
+}
+.woocommerce-MyAccount-content{
+	display: grid;
+	
+}
+
+.wp-block-group__inner-container{
+	display: flex;
+	align-items: center;
+	padding: 2vh 3vw;
+	margin-top: 8vh;
+	border-top: 1px grey solid;
+	border-bottom: 1px grey solid;
+}
+.wp-block-group__inner-container p{
+	flex: 2;
+}
+.wp-block-group__inner-container figure{
+	flex: 1;
+}
+
+/*footer menu styling*/
+#footer-menu li{
+	font-size: 1.2rem;
+}
+.custom-logo{
+	width: 120px;
+	height: 120px;
+	margin-left: 4vw;
+}
+.wp-image-202{
+	margin-top: -3vh;
+}
+/*woocomerce product*/
+.woocommerce-loop-product__title{
+	font-family: 'Oswald', sans-serif;
+}
+.price{
+	font-size: 18px;
+}
+.woocommerce-noreviews{
+	display: none !important;
+}
 
 
+/*article page*/
+.articleTitle{
+	font-size: 28px;
+	text-align: center;
+}
+/*card of each article*/
+.paddingAround .post-list-wrapper>div{
+	
+	box-shadow: 0 0 10px  rgba(0,0,0,0.2);
+	margin-bottom: 8vh;
+	padding: 3vh 3vw;
+	border-radius: 6px;
+}
+.readMore{
+	color:#E9B8AC;
+}
+
+/*footer article in homepage*/
+#footerArticle{
+	margin-top: 10vh;
+}
+#footerArticle h1{
+	font-size: 24px;
+	font-family: roboto;
+}
+#footerArticle article{
+	margin-top: -9vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media query for size less than 900px*/
 @media only screen and (max-width:900px){
 	.columns-3 .products{
 		display: grid;
@@ -236,16 +471,45 @@ main{
 	
 }
 
+/*media query for size less than 850px*/
 @media only screen and (max-width:850px){
 	
 	#primary-menu{
 		display: none;
+		background-color: white;
+		border:2px grey solid;
+		position: absolute;
+		top: 18vh;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+	}
+	#primary-menu li{
+		display: block;
+		clear: both;
+		
 	}
 	.fa-bars{
 		display: block;
 	}
 }
+@media only screen and (min-width:851px){
+	
+	#primary-menu{
+		display: block !important;
+		
+	}
+	#primary-menu li{
+		
+		
+	}
+	.fa-bars{
+		display: none;
+	}
+}
 
+
+/*media query for size less than 700px*/
 @media only screen and (max-width:700px){
 	.columns-3 .products{
 		display: grid;
@@ -253,8 +517,38 @@ main{
 		grid-gap: 4vw;
 	
 	}
+	.custom-logo{
+		width: 100px;
+		height: 100px;
+		margin-left: 4vw;
+	}
+	
 }
 
+/*media query for size less than 750px*/
+@media only screen and (max-width:750px){
+	.wp-block-group__inner-container p{
+		flex: 1;
+	}
+	.wp-block-group__inner-container figure{
+		flex: 1;
+	}
+}
+
+/*media query for size less than 630px*/
+@media only screen and (max-width:630px){
+	.wp-block-group__inner-container{
+		display: grid;
+		grid-auto-columns: 1fr;
+		align-items: center;
+		padding: 2vh 3vw;
+		margin-top: 8vh;
+		border-top: 1px grey solid;
+		border-bottom: 1px grey solid;
+	}
+}
+
+/*media query for size less than 520px*/
 @media only screen and (max-width:520px){
 	.columns-3 .products{
 		display: grid;
@@ -263,6 +557,9 @@ main{
 	
 	}
 }
+
+
+
 
 
 
