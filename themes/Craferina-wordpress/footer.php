@@ -13,6 +13,62 @@
 
 	</div><!-- #content -->
 
+	<?php if( is_front_page() ) { ?>
+
+		<section class="footerarticleWrapper grid-container">
+			<div id="footerArticle" class="site-main grid-x">
+				
+				<h1 class="cell large-12">Craft Article</h1>
+			
+				<article class="cell large-12" id="bodyText">
+					<?php
+					/**
+					 * Custom WP_Query
+					 */
+					$args = array(
+						'post_type'      => 'craft_articles',
+						'posts_per_page' => 3,
+					);
+
+					$articles = new WP_Query( $args );
+
+					if ( $articles->have_posts() ) {
+					?>
+						<div>
+							<div class="post-list height-1">
+								<div class="grid-x paddingAround grid-margin-x">
+									
+									<?php
+									while ( $articles->have_posts() ) {
+										$articles->the_post();
+										?>
+										<div class="cell small-12 medium-6 large-4 custom post-list-wrapper grid-margin-x grid-x">
+											<div id="post-<?php echo get_the_ID(); ?>">
+												<!-- post-thumbnail -->
+												<div class="custom post-thumbnail">
+													<a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+												</div><!-- post-thumbnail -->
+												<a href="<?php the_permalink(); ?>" target="_blank"><h4 class="text-center postTitle"><?php echo get_the_title(); ?></h4></a>
+												<p class="postExcerpt"><?php echo get_the_excerpt(); ?></p>
+												<a class="readMore" href="<?php the_permalink(); ?>" target="_blank">Read More</a>
+											</div>
+										</div>
+									<?php } ?>
+								</div>
+							</div>
+						</div>
+					<?php
+					}
+					wp_reset_postdata();
+					?>
+				
+				</article>	
+
+			</div><!-- footer article section -->
+		</section>
+	<?php
+	}
+	?>
 	<footer id="colophon" class="site-footer grid-x">
 		<nav id="social-navigation" class="social-navigation cell large-12 medium-12 grid-x align-middle">
 				<?php if(get_theme_mod('Craferina-wordpress_facebook_url') ||  get_theme_mod('Craferina-wordpress_twitter_url') ){?> 
