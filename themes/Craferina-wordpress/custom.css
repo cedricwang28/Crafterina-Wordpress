@@ -455,6 +455,10 @@ main{
 
 
 
+
+
+
+
 /*media query for size less than 900px*/
 @media only screen and (max-width:900px){
 	.columns-3 .products{
@@ -472,6 +476,17 @@ main{
 	
 	#primary-menu{
 		display: none;
+		background-color: white;
+		border:2px grey solid;
+		position: absolute;
+		top: 20vh;
+		left: 0;
+		width: 100%;
+	}
+	#primary-menu li{
+		display: block !important;
+		clear: both;
+		
 	}
 	.fa-bars{
 		display: block;

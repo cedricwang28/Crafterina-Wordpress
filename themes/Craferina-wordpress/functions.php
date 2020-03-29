@@ -297,6 +297,14 @@ function sample_theme_scripts() {
 		null
 		
 	);
+	
+	wp_enqueue_script(
+		'sample-theme-app-js',
+		get_template_directory_uri() . '/assets/js/app.js',
+		array( 'jquery' ),
+		'6.5.1',
+		true
+	);
 
 	wp_enqueue_script(
 		'sample-theme-what-input',

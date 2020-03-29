@@ -16,3 +16,8 @@ wp.blocks.registerBlockStyle( 'core/cover', {
 wp.domReady( function() {
 	wp.blocks.unregisterBlockStyle( 'core/quote', 'large' );
 } );
+
+
+alert('fsd');
+
+console.log('dfsfsd');
