@@ -392,6 +392,7 @@ main{
 	flex: 1;
 }
 
+/*footer menu styling*/
 #footer-menu li{
 	font-size: 1.2rem;
 }
@@ -403,6 +404,7 @@ main{
 .wp-image-202{
 	margin-top: -3vh;
 }
+/*woocomerce product*/
 .woocommerce-loop-product__title{
 	font-family: 'Oswald', sans-serif;
 }
