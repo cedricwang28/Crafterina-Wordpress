@@ -419,7 +419,7 @@ main{
 	font-size: 28px;
 	text-align: center;
 }
-.post-list-wrapper>div{
+.paddingAround .post-list-wrapper>div{
 	
 	box-shadow: 0 0 10px  rgba(0,0,0,0.2);
 	margin-bottom: 8vh;
