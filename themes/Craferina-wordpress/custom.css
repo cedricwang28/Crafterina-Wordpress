@@ -498,6 +498,7 @@ main{
 	}
 }
 
+/*media query for size less than 630px*/
 @media only screen and (max-width:630px){
 	.wp-block-group__inner-container{
 		display: grid;
@@ -510,6 +511,7 @@ main{
 	}
 }
 
+/*media query for size less than 520px*/
 @media only screen and (max-width:520px){
 	.columns-3 .products{
 		display: grid;
