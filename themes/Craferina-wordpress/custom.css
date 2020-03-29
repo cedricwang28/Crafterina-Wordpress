@@ -415,6 +415,27 @@ main{
 
 
 
+.articleTitle{
+	font-size: 28px;
+	text-align: center;
+}
+.post-list-wrapper>div{
+	border: 1px black solid;
+	box-shadow: 0 0 10px 10px  rgba(255,255,255,0.2);
+	margin-bottom: 8vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width:900px){
@@ -482,6 +503,9 @@ main{
 	
 	}
 }
+
+
+
 
 
 
