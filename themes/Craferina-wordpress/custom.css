@@ -449,7 +449,7 @@ main{
 
 
 
-
+/*media query for size less than 900px*/
 @media only screen and (max-width:900px){
 	.columns-3 .products{
 		display: grid;
