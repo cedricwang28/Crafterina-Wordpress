@@ -18,6 +18,10 @@
 
 }
 
+a:focus, a:hover {
+    color: #c564a0;
+}
+
 /*footer*/
 #colophon{
 	background-color: #F7DDD9;
@@ -429,6 +433,7 @@ main{
 	margin-bottom: 8vh;
 	padding: 3vh 3vw;
 	border-radius: 6px;
+	width: 100%
 }
 .readMore{
 	color:#E9B8AC;
